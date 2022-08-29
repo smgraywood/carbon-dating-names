@@ -2,17 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -35,4 +24,18 @@
   to {
     transform: rotate(360deg);
   }
+}
+#dino-logo{
+  height:250px;
+}
+#outlined-basic{
+  background-color: #fff;
+}
+
+#submit-button{
+  background-color: #71C5EB;
+  margin: 5px;
+}
+p{
+  font-size: 15px;
 }
