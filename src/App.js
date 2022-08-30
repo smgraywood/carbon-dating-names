@@ -17,9 +17,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h3>Name Carbon Dater</h3>
+        <h1>Name Carbon Dater</h1>
         <h6>Enter your name and press submit to see what age we think you might be!</h6>
-        <img src={dino} id="dino-logo" alt="dinosaur logo" />
+        <div id="image-wrapper">
+          <img src={dino} id="dino-logo" alt="dinosaur logo" />
+        </div>
         < Form />
         <div id="returned-API-data">
           This is a placeholder for the returned API info
