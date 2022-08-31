@@ -42,10 +42,23 @@ const Form = (props) => {
         <Grid item >
       <TextField 
       id="outlined-basic"
-      label="Name" 
+      label="Name"
+      sx={{
+    	"& label": {
+          width: "90%",
+          transformOrigin: "center",
+		  outline: "none",
+		  disabledUnderline: true
+         },
+		 "& legend": {
+			width: "50%",
+			textAlign: "center"
+		  }
+      }}
       value={nameObject.name}
       onChange={handleInput}
       variant="outlined" 
+      aria-label="text feild in which you can input your name"
       >
       </TextField>
       </Grid>

@@ -54,13 +54,8 @@ h6{
 }
 #outlined-basic{
   background-color: #fff;
-  position: center;
-  text-align: center;
 }
-#outlined-basic label{
-  display: block;
-  text-align: center;
-}
+
 
 #submit-button{
   background-color: #71C5EB;
@@ -69,7 +64,3 @@ h6{
 p{
   font-size: 15px;
 }
-
-/* #returned-API-data{
-  display: none;
-} */
