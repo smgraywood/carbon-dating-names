@@ -1,16 +1,7 @@
+import React from 'react';
 import './App.css';
 import dino from './dino_image.jpg'
 import Form from './Form.js'
-
-// async function nameCarbonDater(name) {
-//   let obj;
-//   const result =await fetch(`https://api.agify.io?name=${name}`)
-//   obj = await result.json();
-//   console.log(obj)
-//   }
-  
-//   nameCarbonDater("michael")
-
 
 function App() {
 
@@ -22,11 +13,8 @@ function App() {
         <div id="image-wrapper">
           <img src={dino} id="dino-logo" alt="dinosaur logo" />
         </div>
-        < Form />
-        <div id="returned-API-data">
-          This is a placeholder for the returned API info
-        </div>
       </header>
+        < Form />
     </div>
   );
 }
