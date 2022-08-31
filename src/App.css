@@ -50,10 +50,16 @@ h6{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center;;
 }
 #outlined-basic{
   background-color: #fff;
+  position: center;
+  text-align: center;
+}
+#outlined-basic label{
+  display: block;
+  text-align: center;
 }
 
 #submit-button{

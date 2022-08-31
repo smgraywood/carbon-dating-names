@@ -1,4 +1,6 @@
 import React , { useState} from "react";
+import Grid from "@mui/material/Grid";
+import FormControlLabel from '@mui/material/FormControlLabel';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 
@@ -36,13 +38,17 @@ const Form = (props) => {
   return (
     <div className="form-wrapper">
     <form className="name-submit-form">
+    <Grid container alignItems="center" justify="center" direction="column">
+        <Grid item >
       <TextField 
-      id="outlined-basic" 
-      label="Name"
+      id="outlined-basic"
+      label="Name" 
       value={nameObject.name}
       onChange={handleInput}
-      variant="outlined" >
+      variant="outlined" 
+      >
       </TextField>
+      </Grid>
       <Button 
       id="submit-button" 
       variant="contained"
@@ -51,6 +57,7 @@ const Form = (props) => {
       aria-label="button to submit form">
         Submit
       </Button>
+      </Grid>
     </form>
     { nameObject.age ? <Results age={nameObject.age}/> : null } 
   </div>
