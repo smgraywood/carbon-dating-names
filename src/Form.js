@@ -1,20 +1,14 @@
 import React , { useState} from "react";
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
-  
 
-
-window.onload = function(){
-    const targetDiv = document.getElementById("returned-API-data");
-    const btn = document.getElementById("submit-button");
-    btn.onclick = function () {
-        if (targetDiv.style.display === "block") {
-            targetDiv.style.display = "none";
-        } else {
-            targetDiv.style.display = "block";
-        };
-    };
-};
+const Results = ({age}) => {
+    return (<div 
+    id="returned-API-data"
+    aria-label="space to display age based on input name">
+         We think you are {age}. 
+    </div>
+)};
 
 const Form = (props) => {
     const [nameObject, setNameObject] = useState({name: "", age: "", count: ""});
@@ -22,7 +16,6 @@ const Form = (props) => {
     const handleInput = (event) =>{
         event.preventDefault();
         let username = event.target.value;
-        //console.log(username);
         setNameObject((nameObject) => ({...nameObject, name:username}));
     }
 
@@ -59,9 +52,7 @@ const Form = (props) => {
         Submit
       </Button>
     </form>
-    <div id="returned-API-data">
-        We think you are {nameObject.age}
-    </div>
+    { nameObject.age ? <Results age={nameObject.age}/> : null } 
   </div>
   )
 }
