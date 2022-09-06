@@ -28,7 +28,6 @@ const Form = (props) => {
 		}
 		let trailingAmpersandURL = URL.endsWith("&");
 		URL = trailingAmpersandURL ? URL.slice(0, -1) : URL;
-		console.log(names, URL)
 		fetch(URL)
         .then(response => response.json())
         .then(data => {
