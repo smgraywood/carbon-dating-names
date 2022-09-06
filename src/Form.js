@@ -10,13 +10,14 @@ import TextField from '@mui/material/TextField';
 //for loop to display divs 
 
 
-const Results = ({name, age}) => {
-    return (<div 
-    id="returned-API-data"
-    aria-label="space to display age based on input name(s) and country">
-         We think {name} is {age}. 
-    </div>
-)};
+// const Results = ({name}, {age}) => {
+//     return (<div 
+//     id="returned-API-data"
+//     aria-label="space to display age based on input name(s) and country">
+//          We think {name} is {age}. 
+//     </div>
+// )};
+
 
 const Form = (props) => {
     const [agifyData, setAgifyData] = useState([]);
@@ -68,6 +69,9 @@ const Form = (props) => {
     <div className="form-wrapper">
     <form className="name-submit-form">
     <Grid container alignItems="center" justify="center" direction="column">
+	{isHovering && <p className="small-text-window" id="names-info-window">
+	<b>Please do not add spaces between commas and names. </b><br />
+	Example: Sarah,Martin,Nate <br />NOT Sarah, Martin, Nate</p>}
         <Grid item >
       <TextField 
       	id="outlined-basic"
@@ -86,12 +90,14 @@ const Form = (props) => {
       }}
     	value={agifyData.name}
     	onChange={handleNameInput}
+		onMouseOver={handleMouseOver}
+		onBlur={handleMouseOut}
     	variant="outlined" 
     	aria-label="text feild in which you can input your name"
       >
     </TextField>	
       </Grid>
-	  {isHovering && <a id="small-text-window" href="https://agify.io/our-data" target="blank">How Do I Input my Country?</a>}
+	  {isHovering && <a className="small-text-window" href="https://agify.io/our-data" target="blank">How Do I Input my Country?</a>}
 	  <Grid item>  
 	<TextField 
     	id="outlined-basic"
@@ -126,16 +132,14 @@ const Form = (props) => {
       </Button>
       </Grid>
     </form>
-	for(i of i){
-    <Results 
-	name={agifyData.name}
-	age={agifyData.age}
-	/> 
-	}
+	{ {handleSubmit} ? agifyData.map((element) => <div
+	key={agifyData.id}
+    id="returned-API-data"
+    aria-label="space to display age based on input name(s) and country">
+         We think {element.name} is {element.age}. 
+    </div>) : null } 
   </div>
   )
 }
 
 export default Form;
-
-//for loop in jsx, get rid of ternary
