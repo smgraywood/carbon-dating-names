@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Name Carbon Dater</h1>
-        <h6>Enter your name and press submit to see what age we think you might be!</h6>
+        <h6 id="user-message">Enter your name and press submit to see what age we think you might be!</h6>
         <div id="image-wrapper">
           <img src={dino} id="dino-logo" alt="dinosaur logo" />
         </div>
