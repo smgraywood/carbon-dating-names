@@ -28,6 +28,11 @@ Carbon-Dating-Names is a project designed to allow users to input name(s) and se
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![MaterialUI](https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white)
 <br>
+
+*Testing*
+![Jest](https://img.shields.io/badge/Jest-323330?style=for-the-badge&logo=Jest&logoColor=white)
+
+<br>
 <br>
 <br>
 <h3>Running Locally</h3>
