@@ -2,6 +2,8 @@
 <br> 
 See it live! Code Sandbox: https://731py2.csb.app/
 <br>
+<br>
+<br>
 <img src="https://cdn-icons-png.flaticon.com/512/5458/5458471.png" width="300px">
 <h3>Overview</h3>
 <hr>
@@ -32,10 +34,10 @@ Carbon-Dating-Names is a project designed to allow users to input name(s) and se
 <hr>
 <br>
 1. Fork & clone this repo
-2. In your CLI, from the root directory, run `npm install`
-3. Navigate into /app with `cd app` & run `npm install`
-4. Navigate back to the root directory & run `npm start`
-5. Carbon Dating Names will be running on localhost:3000
+<br>2. In your CLI, from the root directory, run `npm install`
+<br>3. Navigate into /app with `cd app` & run `npm install`
+<br>4. Navigate back to the root directory & run `npm start`
+<br>5. Carbon Dating Names will be running on localhost:3000
 
 
 <h3>Thought Process, Assumptions, and Improvements</h3>
