@@ -8,7 +8,7 @@ See it live! Code Sandbox: https://731py2.csb.app/
 <h3>Overview</h3>
 <hr>
 <br>
-Carbon-Dating-Names is a project designed to allow users to input name(s) and see the predicted age of the corresponding name. Focus is on code robustness and elegant user experience. 
+Carbon Dating Names is a project designed to allow users to input name(s) and see the predicted age of the corresponding name. Focus is on code robustness and elegant user experience. 
 <br>
 <br>
 <br>
