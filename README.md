@@ -51,16 +51,16 @@ Carbon-Dating-Names is a project designed to allow users to input name(s) and se
 <hr>
 <br>
 <h4>a. Thought process to build the solution </h4>
-    <br>-Creation of design
+    <br><bold>-Creation of design</bold>
     <br>-Think through what tasks need to be accomplished in what order
         <br>-We need a frontend which allows users to input a name and to receive back an age.
         <br>-No database requested, though this could potentially be paired with a database to increase usability.
         <br>-We need an elegant UI/UX
         <br>-Think about how these things can compliment one another
-    <br>- Build basic UI in order to play with API
-    <br>-Build out API
+    <br><bold>- Build basic UI in order to play with API</bold>
+    <br><bold>-Build out API</bold>
         <br>-built out all components of API but then removed country due to buggy API response
-    <br>-Go back to update front end, create better UI/UX
+    <br><bold>-Go back to update front end, create better UI/UX</bold>
 <h4>b. Assumptions made (in the absence of specific instructions, we expect you to make educated assumptions to move forward) </h4>
     <br>-Assumed we should make all parts of the API accessible
     <br>-Assumed API could work with names and country call in tandem
