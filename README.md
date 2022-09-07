@@ -63,5 +63,7 @@ Carbon-Dating-Names is a project designed to allow users to input name(s) and se
 <h4>c. Improvements you’d like to make on the code base </h4>
     <br>-I would like to work on the logic behind the multiple names in order to allow users to input the list in multiple forms and still have the API call work
 
-
+<br>
+<br>
+<br>
 <h6> Favicon Attribution: <a href="https://www.flaticon.com/free-icons/dinosaur" title="dinosaur icons">Dinosaur icons created by Freepik - Flaticon</a></h6>
