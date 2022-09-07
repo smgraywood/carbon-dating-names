@@ -33,8 +33,6 @@ Carbon Dating Names is a project designed to allow users to input name(s) and se
 ![Jest](https://img.shields.io/badge/Jest-323330?style=for-the-badge&logo=Jest&logoColor=white)
 
 <br>
-<br>
-<br>
 <h3>Running Locally</h3>
 <hr>
 1. Fork & clone this repo
@@ -44,7 +42,6 @@ Carbon Dating Names is a project designed to allow users to input name(s) and se
 <br>
 <h3>Thought Process, Assumptions, and Improvements</h3>
 <hr>
-<br>
 <h4>a. Thought process to build the solution </h4>
     <br>-Creation of design
     <br>-Think through what tasks need to be accomplished in what order
