@@ -12,7 +12,7 @@ Carbon-Dating-Names is a project designed to allow users to input name(s) and se
 <br>
 <br>
 <br>
-<h2>Tech Stack</h2>
+<h3>Tech Stack</h3>
 <hr>
 <br>
 
