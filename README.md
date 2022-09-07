@@ -62,7 +62,7 @@ Carbon Dating Names is a project designed to allow users to input name(s) and se
 
     - Assumed that devs using this repo would be on Mac
     - Assumed that devs running this program would have node downloaded
-    - Assumed comma seperated list was sufficient for input
+    - Assumed comma separated list was sufficient for input
     - Assumed names call would be sufficient for API usage (tried country call and realized it added insufficient value and had bugs so took out of code base)
     - Assumed no DB required
     - Assumed use of CSS alongside Material UI
