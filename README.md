@@ -38,29 +38,30 @@ Carbon-Dating-Names is a project designed to allow users to input name(s) and se
 <br>3. Navigate into /app with `cd app` & run `npm install`
 <br>4. Navigate back to the root directory & run `npm start`
 <br>5. Carbon Dating Names will be running on localhost:3000
-
-
+<br>
+<br>
+<br>
 <h3>Thought Process, Assumptions, and Improvements</h3>
 <hr>
 <br>
-<h3>a. Thought process to build the solution </h3>
-    -Creation of design
-    -Think through what tasks need to be accomplished in what order
-        -We need a frontend which allows users to input a name and to receive back an age.
-        -No database requested, though this could potentially be paired with a database to increase usability.
-        -We need an elegant UI/UX
-        -Think about how these things can compliment one another
-    - Build basic UI in order to play with API
-    -Build out API
-        -built out all components of API but then removed country due to buggy API response
-    -Go back to update front end, create better UI/UX
-<h3>b. Assumptions made (in the absence of specific instructions, we expect you to make educated assumptions to move forward) </h3>
-    -Assumed we should make all parts of the API accessible
-    -Assumed API could work with names and country call in tandem
-    -Assumed only one country could be used
+<h4>a. Thought process to build the solution </h4>
+    <br>-Creation of design
+    <br>-Think through what tasks need to be accomplished in what order
+        <br>-We need a frontend which allows users to input a name and to receive back an age.
+        <br>-No database requested, though this could potentially be paired with a database to increase usability.
+        <br>-We need an elegant UI/UX
+        <br>-Think about how these things can compliment one another
+    <br>- Build basic UI in order to play with API
+    <br>-Build out API
+        <br>-built out all components of API but then removed country due to buggy API response
+    <br>-Go back to update front end, create better UI/UX
+<h4>b. Assumptions made (in the absence of specific instructions, we expect you to make educated assumptions to move forward) </h4>
+    <br>-Assumed we should make all parts of the API accessible
+    <br>-Assumed API could work with names and country call in tandem
+    <br>-Assumed only one country could be used
 
-<h3>c. Improvements you’d like to make on the code base </h3>
-    -I would like to work on the logic behind the multiple names in order to allow users to input the list in multiple forms and still have the API call work
+<h4>c. Improvements you’d like to make on the code base </h4>
+    <br>-I would like to work on the logic behind the multiple names in order to allow users to input the list in multiple forms and still have the API call work
 
 
 <h6> Favicon Attribution: <a href="https://www.flaticon.com/free-icons/dinosaur" title="dinosaur icons">Dinosaur icons created by Freepik - Flaticon</a></h6>
