@@ -9,10 +9,12 @@ const Form = (props) => {
 	const [isHovering, setIsHovering] = useState(false);
 	const [names, setNames] = useState([]);
 
+	//mouseover handler for info window
 	const handleMouseOver = () => {
 		setIsHovering(true);
 	};
 
+	//handler for name/names being added to textfield
 	const handleNameInput = (event) =>{
         event.preventDefault();
         let nameString = event.target.value;
@@ -26,7 +28,9 @@ const Form = (props) => {
 		for(let name of names){
 			URL = URL.concat(`name[]=${name}&`)
 		}
+		//to determine whether there is a trailing ampersand
 		let trailingAmpersandURL = URL.endsWith("&");
+		//to determine whether more than one name was added and if the trailing ampersand is there, remove it
 		URL = trailingAmpersandURL ? URL.slice(0, -1) : URL;
 		fetch(URL)
         .then(response => response.json())
