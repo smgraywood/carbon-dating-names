@@ -35,7 +35,6 @@ const Form = (props) => {
         })
 	};
 
-
   return (
     <div className="form-wrapper">
     	<form className="name-submit-form">
