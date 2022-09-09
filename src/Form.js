@@ -38,54 +38,58 @@ const Form = (props) => {
 
   return (
     <div className="form-wrapper">
-    <form className="name-submit-form">
-    <Grid container alignItems="center" justify="center" direction="column">
-	{isHovering && <p className="small-text-window" id="names-info-window">
-	<b>If adding multiple names, please do not add spaces between commas and names. </b><br />
-	Example: Sarah,Martin,Nate <br />NOT Sarah, Martin, Nate</p>}
-        <Grid item >
-    		<TextField 
-	  		autoComplete='off'
-      		id="outlined-basic"
-      		label="Name(s)"
-    		sx={{
-    		"& label": {
-          	width: "90%",
-        	transformOrigin: "center",
-			outline: "none",
-			disabledUnderline: true
-         	},
-		 	"& legend": {
-			width: "50%",
-			textAlign: "center"
-		  	}
-      	}}
-    		value={agifyData.name}
-    		onChange={handleNameInput}
-			onMouseOver={handleMouseOver}
-    		variant="outlined" 
-    		aria-label="text feild in which you can input your name"
-      		>
-    		</TextField>	
-      	</Grid>
-	  		<Button 
-    		id="submit-button" 
-    		variant="contained"
-    		type="submit"
-    		onClick={handleSubmit}
-    		aria-label="button to submit form">
-    		Submit
-      		</Button>
-    	</Grid>
-    </form>
-	{ {handleSubmit} ? agifyData.map((element) => 
-	<div
-	key={agifyData.id}
-	id="returned-API-data"
-	aria-label="space to display age based on input name(s) and country">
-         We think <b>{element.name}</b> is {element.age}. 
-	</div>) : null } 
-  </div>
+    	<form className="name-submit-form">
+    	<Grid 
+		container 
+		alignItems="center" 
+		justify="center" 
+		direction="column">
+		{isHovering && <p className="small-text-window" id="names-info-window">
+		<b>If adding multiple names, please do not add spaces between commas and names. </b><br />
+		Example: Sarah,Martin,Nate <br />NOT Sarah, Martin, Nate</p>}
+        	<Grid item >
+    			<TextField 
+				autoComplete='off'
+      			id="outlined-basic"
+      			label="Name(s)"
+    			sx={{
+					"& label": {
+						width: "90%",
+						transformOrigin: "center",
+						outline: "none",
+						disabledUnderline: true
+         			},
+					"& legend": {
+						width: "50%",
+						textAlign: "center"
+					}
+				}}
+    			value={agifyData.name}
+    			onChange={handleNameInput}
+				onMouseOver={handleMouseOver}
+    			variant="outlined" 
+    			aria-label="text feild in which you can input your name"
+      			>
+    			</TextField>	
+      		</Grid>
+				<Button 
+				id="submit-button" 
+				variant="contained"
+				type="submit"
+				onClick={handleSubmit}
+				aria-label="button to submit form">
+    			Submit
+      			</Button>
+    		</Grid>
+		</form>
+		{ {handleSubmit} ? agifyData.map((element) => 
+		<div
+		key={agifyData.id}
+		id="returned-API-data"
+		aria-label="space to display age based on input name(s) and country">
+			We think <b>{element.name}</b> is {element.age}. 
+		</div>) : null } 
+	</div>
   )
 }
 
