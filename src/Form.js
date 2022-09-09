@@ -74,7 +74,7 @@ const Form = (props) => {
               onChange={handleNameInput}
               onMouseOver={handleMouseOver}
               variant="outlined"
-              aria-label="text feild in which you can input your name"
+              aria-label="text field in which you can input your name"
             ></TextField>
           </Grid>
           <Button
