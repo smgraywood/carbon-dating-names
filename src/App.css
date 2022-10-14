@@ -15,6 +15,7 @@ body {
   font-size: calc(10px + 2vmin);
   color: white;
 }
+/* add this styling to the theme -> All H1 will have styling :) */
 h1{
   display: flex;
   flex-direction: column;
