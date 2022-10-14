@@ -2,13 +2,12 @@ import React, { useState } from "react";
 import Grid from "@mui/material/Grid";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
+import HelperText from "./HelperText";
 
 const Form = (props) => {
 	const [agifyData, setAgifyData] = useState([]);
-	const [isHovering, setIsHovering] = useState(false);
 	const [names, setNames] = useState([]);
-
-	//mouseover handler for info window
+	const [isHovering, setIsHovering] = useState(false);
 	const handleMouseOver = () => {
 		setIsHovering(true);
 	};
@@ -47,17 +46,10 @@ const Form = (props) => {
 					justify="center"
 					direction="column"
 				>
-					{isHovering && (
-						<p className="small-text-window" id="names-info-window">
-							<b>
-								If adding multiple names, please do not add
-								spaces between commas and names.{" "}
-							</b>
-							<br />
-							Example: Sarah,Martin,Nate <br />
-							NOT Sarah, Martin, Nate
-						</p>
-					)}
+					<>
+					<HelperText 
+					isHovering={isHovering}/>					
+					</>
 					<Grid item>
 						<TextField
 							autoComplete="off"
