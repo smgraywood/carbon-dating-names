@@ -3,6 +3,8 @@ import Grid from "@mui/material/Grid";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import HelperText from "./HelperText";
+import theme from "../Themes";
+import { Typography } from "@mui/material";
 
 const Form = (props) => {
 	const [agifyData, setAgifyData] = useState([]);
@@ -75,13 +77,13 @@ const Form = (props) => {
 						></TextField>
 					</Grid>
 					<Button
-						id="submit-button"
+						color="primary"
 						variant="contained"
 						type="submit"
 						onClick={handleSubmit}
 						aria-label="button to submit form"
 					>
-						Submit
+						<Typography variant="h6">Submit</Typography>
 					</Button>
 				</Grid>
 			</form>

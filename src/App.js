@@ -2,11 +2,14 @@ import React from "react";
 import "./App.css";
 import dino from "./dino_image.jpg";
 import Form from "./components/Form.js"
-import Typography from "@mui/material/Typography";
 import PageHeading from "./components/PageHeading";
+import theme from "./Themes";
+import { ThemeProvider } from '@mui/material/styles';
+import { Typography } from "@mui/material";
 
 function App() {
 	return (
+		<ThemeProvider theme={theme}>
 		<div className="App">
 			<header className="App-header">
 				<PageHeading
@@ -18,7 +21,8 @@ function App() {
 				</div>
 			</header>
 			<Form />
-		</div>
+		</div>			
+		</ThemeProvider>
 	);
 }
 

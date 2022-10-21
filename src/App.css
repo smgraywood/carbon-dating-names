@@ -44,12 +44,14 @@ h6{
   padding: 0px;
   margin: 0px;
 }
+
 #image-wrapper{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+
 #dino-logo{
   height:250px;
   display: flex;
@@ -57,18 +59,14 @@ h6{
   align-items: center;
   justify-content: center;;
 }
+
 #outlined-basic{
   background-color: #fff;
-}
-
-
-#submit-button{
-  background-color: #71C5EB;
-  margin: 5px;
 }
 p{
   font-size: 15px;
 }
+
 .small-text-window{
   color: #000;
   background-color: #fff;
